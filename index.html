@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="">
+<!-- //GridServ - The Home Server Grid App Launcher -->
+<!-- Author: Scott Merker -->
+<!-- scottmerker@gmail.com -->
+
+<!-- 
+Copyright (c) 2014 Scott Merker
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+
+<head>  
+<meta charset="utf-8">
+<title>server title /launch</title>
+<meta name="description" content="GridServe - The Home Server Grid App Launcher" />  
+<meta name="keywords" content="GridServ" />
+<meta name="robots" content="" />
+
+<!-- Font Awesome & CSS -->
+<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Grid Title-->
+<h1>servertitle /launch </h1>
+
+<!-- G Search on Page-->
+<div class="gsearch">
+<form method="get" action="http://www.google.com/search">
+<input type="text"   name="q" size="60" style="color:#808080;"
+maxlength="255" value="search the googles"
+onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+<input type="submit" value="google?" />
+</form>
+</div>
+
+<!-- Welcome to the Grid -->
+<!-- Replace with icons and links to your local server or other resources -->
+<div class="box-grid">
+	<div class="box utorrent" onclick="window.open('http://192.168.1.155:9091/gui');"><i class="fa fa-magnet"></i>uTorrent</div>
+	<div class="box sickbeard" onclick="window.open('http://192.168.1.155:8081');"><i class="fa fa-film"></i>Sickbeard</div>
+	<div class="box Usenet" onclick="window.open('http://192.168.1.155:8080');"> <i class="fa fa-space-shuttle"></i>Usenet</div>
+	<div class="box Usenet" onclick="window.open('http://192.168.1.155:8080');"> <i class="fa fa-rebel"></i>CouchPotato</div>
+</div>
+
+<!-- Footer w/ IP address -->
+<div class="foot">
+	<div class="fl">
+	//GridServ &copy; 2014 &nbsp; 
+	</div>
+	incoming ip address: <script type="text/javascript" src="http://www.whatsmyip.us/showipsimple.php"> </script>
+</div>
+
+</body>
+</html>

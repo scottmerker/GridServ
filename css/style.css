@@ -40,7 +40,6 @@ body {
 -moz-background-size:cover;
 -o-background-size:cover;
 -webkit-background-size:cover;
-/* replace your background image below */
 background:url(../img/background.jpg) no-repeat center center fixed;
 background-size:cover;
 font-family:arial, sans-serif;
@@ -120,15 +119,17 @@ padding:7px 0;
 text-align:center;
 }
 
-input {
+input[type=submit], input[type=text] {
 background:#fff;
 border:0;
 color:#482838;
 padding:10px;
 }
 
-input:hover {
-background:#FDEDCC;
+
+input[type=submit]:hover {
+background:#62e6ef;
+cursor:pointer;
 }
 
 .foot {
